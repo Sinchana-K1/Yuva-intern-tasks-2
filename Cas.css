@@ -1,0 +1,136 @@
+/* --- GLOBAL STYLES --- */
+* {       
+    margin: 0;       
+    padding: 0;       
+    box-sizing: border-box;       
+    font-family: Arial, sans-serif;   
+}      
+
+body {       
+    background: #f3e8ff;       
+    color: #2d1b4e;   
+}      
+
+/* --- HEADER & NAVIGATION --- */
+header {       
+    background: #6b21a8;       
+    color: white;       
+    padding: 15px;       
+    display: flex;       
+    justify-content: space-between;       
+    align-items: center;   
+}      
+
+header h1 {       
+    font-size: 20px;   
+}      
+
+nav a {       
+    color: white;       
+    text-decoration: none;       
+    margin-left: 15px;       
+    font-size: 14px;   
+}      
+
+/* --- HERO BANNER --- */
+.hero {       
+    background: #a855f7;       
+    color: white;       
+    text-align: center;       
+    padding: 40px 20px;   
+}      
+
+.hero h2 {       
+    font-size: 24px;       
+    margin-bottom: 10px;   
+}      
+
+.hero p {       
+    margin-bottom: 15px;   
+}      
+
+.hero button {       
+    background: white;       
+    color: #6b21a8;       
+    border: none;       
+    padding: 10px 22px;       
+    border-radius: 20px;       
+    font-weight: bold;       
+    cursor: pointer;   
+}      
+
+/* --- EVENTS GRID & CARDS --- */
+.events {       
+    display: grid;       
+    grid-template-columns: repeat(4, 1fr);       
+    gap: 15px;       
+    padding: 30px 20px;       
+    max-width: 1000px;       
+    margin: auto;   
+}      
+
+.card {       
+    background: white;       
+    padding: 20px;       
+    border-radius: 10px;       
+    text-align: center;       
+    border-top: 4px solid #a855f7;      
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);     
+    transition: transform 0.2s ease; 
+}  
+
+.card:hover {     
+    transform: translateY(-5px); 
+}  
+
+.card h3 {     
+    margin-top: 10px;     
+    color: #6b21a8; 
+}  
+
+/* --- FOOTER --- */
+footer {     
+    background: #6b21a8;     
+    color: white;     
+    text-align: center;     
+    padding: 15px;     
+    margin-top: 30px;     
+    font-size: 14px; 
+}  
+
+/* --- RESPONSIVE MEDIA QUERIES --- */  
+
+/* Tablet Viewport (481px to 900px) */ 
+@media (max-width: 900px) {     
+    .events {         
+        grid-template-columns: repeat(2, 1fr);         
+        padding: 20px 15px;     
+    }          
+    .hero h2 {         
+        font-size: 20px;     
+    }          
+    .hero p {         
+        font-size: 14px;     
+    } 
+}  
+
+/* Mobile Viewport (0px to 480px) */ 
+@media (max-width: 480px) {     
+    header {         
+        flex-direction: column;         
+        gap: 10px;         
+        text-align: center;     
+    }          
+    nav a {         
+        margin: 0 10px;     
+    }          
+    .events {         
+        grid-template-columns: 1fr;     
+    }          
+    .hero h2 {         
+        font-size: 18px;     
+    }          
+    .hero {         
+        padding: 30px 15px;     
+    } 
+}
